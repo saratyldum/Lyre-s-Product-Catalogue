@@ -4,10 +4,10 @@ import { visionTool } from '@sanity/vision';
 import schemas from './schemas/schemas.js';
 
 export default {
-	title: 'Studio',
+	title: 'Lyres product catalogue',
 
-	projectId: '',
-	dataset: '',
+	projectId: '50b9ial6',
+	dataset: 'production',
 
 	plugins: [deskTool(), visionTool()],
 
