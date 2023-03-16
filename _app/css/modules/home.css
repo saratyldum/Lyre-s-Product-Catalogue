@@ -32,18 +32,36 @@
 	position: absolute;
 	bottom: -6rem;
 }
-.main_image::before {
-	content: 'Click me';
-	width: 170px;
-	height: 170px;
+
+/* .main_image--text {
 	position: absolute;
-	right: 0;
+	right: 7.5rem;
+	top: 17.5rem;
+} */
+
+.img {
+	position: relative;
+	height: 100%;
 }
 
 .main_image img {
 	height: 100%;
 	object-fit: cover;
+	position: relative;
 }
+
+.img::before {
+	content: '';
+	background: url(../../assets/icons/clickMe-button.svg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	right: -3rem;
+	top: 4.5rem;
+}
+
 
 .navigation_button {
 	display: none;
