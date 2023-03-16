@@ -13,9 +13,12 @@
 	/* overflow: hidden; */
 }
 
+.information {
+	display: none;
+}
+
 .main_image {
 	height: 400px;
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -32,12 +35,6 @@
 	position: absolute;
 	bottom: -6rem;
 }
-
-/* .main_image--text {
-	position: absolute;
-	right: 7.5rem;
-	top: 17.5rem;
-} */
 
 .img {
 	position: relative;
@@ -65,8 +62,49 @@
 
 .navigation_button {
 	display: none;
-	/* position: absolute;
-	background-color: transparent;
-	border: none;
-	bottom: 1rem; */
+
+}
+
+@media screen and (min-width: 992px) {
+	.information {
+		display: block;
+		height: 500px;
+		width: 500px;
+		padding-right: 10rem;
+	}
+
+	.logo img {
+		height: 200px;
+		width: 100%;
+		object-fit: contain;
+	}
+	.main_container {
+		flex-direction: row-reverse; 
+		justify-content: center;
+		gap: 0;
+	}
+
+	.mobile-logo {
+		display: none;
+	}
+
+
+	.sub-header__sans-serif, .sub-header__serif {
+		display: block;
+		text-transform: uppercase;
+	}
+	.sub-header__sans-serif {
+		font-family: var(--paragraph-font-family)
+	}
+
+	.sub-header__serif {
+		font-family: var(--heading-font-family)
+
+	}
+	.navigation_button {
+		position: absolute;
+		background-color: transparent;
+		border: none;
+		bottom: 1rem;
+	}
 }
