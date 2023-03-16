@@ -1,0 +1,10 @@
+body {
+	color: var(--font-color)
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background-color: inherit;
+	color: var(--font-color)
+}

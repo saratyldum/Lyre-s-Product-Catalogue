@@ -2,37 +2,53 @@
 	position: relative;
 	width: 100%;
 	height: 100dvh;
-	background-color: #257441;
+	background-color: var(--absinthe);
+	background: linear-gradient(var(--absinthe), var(--absinthe), var(--absinthe-darker));
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 2rem;
-	overflow: hidden;
+	gap: 1rem;
+	padding: 1rem;
+	/* overflow: hidden; */
 }
 
 .main_image {
-	height: 100%;
+	height: 400px;
 	width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	position: relative;
+}
+
+.main_image::after {
+	content: '';
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	transform: rotateX(97deg);
+	filter: blur(30px);
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: -6rem;
+}
+.main_image::before {
+	content: 'Click me';
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	right: 0;
 }
 
 .main_image img {
-	/* height: 100%; */
-	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	margin-top: -4rem;
-}
-
-.main_logo {
-	width: 50%;
 }
 
 .navigation_button {
-	position: absolute;
+	display: none;
+	/* position: absolute;
 	background-color: transparent;
 	border: none;
-	bottom: 2rem;
+	bottom: 1rem; */
 }

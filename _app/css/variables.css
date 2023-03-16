@@ -1,5 +1,4 @@
 :root {
-
 	/**************** fonts **************/
 	--font-color: #fff;
 
@@ -31,7 +30,7 @@
 
 	/********** background colors (darker) *********/
 	--dry-london-darker: #236da9;
-	--absinthe-darker: #187238;
+	--absinthe-darker: #0e4621;
 	--agave-reserva-darker: #167571;
 	--amaretti-darker: #ddb443;
 	--american-malt-darker: #5b6079;

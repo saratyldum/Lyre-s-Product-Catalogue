@@ -1,0 +1,42 @@
+.navigation {
+	background-color: transparent;
+	list-style: none;
+	display: flex;
+	gap: 4rem;
+	padding: 1rem;
+	overflow: scroll;
+	width: 100vw;
+}
+
+.navigation__image {
+	height: 130px;
+	position: relative;
+}
+
+.navigation li {
+	position: relative;
+}
+
+.navigation li::after {
+	content: '';
+	width: 20px;
+	height: 50px;
+	border-radius: 50%;
+	transform: rotateX(97deg);
+	filter: blur(20px);
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	bottom: -1.5rem;
+	left: 1rem
+}
+
+.navigation li button {
+	transition: all ease-in-out 0.3s;
+}
+
+@media screen and (min-width: 778px) {
+	
+	.navigation li button:hover {
+		transform: translateY(-1rem)
+	}
+}
