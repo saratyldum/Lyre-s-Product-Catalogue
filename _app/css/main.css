@@ -1,5 +1,7 @@
 @import '/_app/css/reset.css';
 @import '/_app/css/variables.css';
 @import '/_app/css/base.css';
+
 @import '/_app/css/modules/home.css';
 @import '/_app/css/modules/navigation.css';
+@import '/_app/css/modules/information.css';

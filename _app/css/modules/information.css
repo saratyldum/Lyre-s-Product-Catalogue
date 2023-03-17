@@ -1,0 +1,9 @@
+.body__information {
+	position: relative;
+	background-color: var(--american-malt);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+}
