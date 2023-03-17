@@ -8,3 +8,7 @@ button {
 	background-color: inherit;
 	color: var(--font-color)
 }
+
+ul {
+	list-style: none;
+}
