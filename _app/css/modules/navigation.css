@@ -46,7 +46,7 @@
 	}
 
 	.navigation {
-		overflow: hidden;
+		overflow-x: scroll;
 	}
 
 	.navigation li button:hover {
