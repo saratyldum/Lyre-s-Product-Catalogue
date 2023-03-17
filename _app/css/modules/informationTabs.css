@@ -1,0 +1,14 @@
+.product-information__header {
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 1.5rem;
+	border-bottom: 1px solid white;
+	padding-top: 1rem;
+	cursor: pointer;
+}
+
+.product-information__tab {
+	display: none;
+	text-align: left;
+	padding: 0.5rem 0;
+}
