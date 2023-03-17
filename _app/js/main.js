@@ -1,5 +1,5 @@
 import navigation from "./modules/navigation.js";
-import backgroundColor from "./modules/backgroundColor.js";
+import homeStyle from "./modules/homeStyle.js";
 
 // navigation();
-backgroundColor()
+homeStyle()
