@@ -113,7 +113,7 @@
 	}
 
 	.navigation_button {
-		display: none; /*make display block*/
+		display: block;
 		position: absolute;
 		background-color: transparent;
 		border: none;
