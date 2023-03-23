@@ -8,13 +8,13 @@ export default function tabs() {
 	})
 
 	function handleTabClick(e) {
+		// e.preventDefault()
 		const currentTab = e.target.dataset.id;
 		const currentContent = tabsContent.item(currentTab)
 		toggleContent(currentContent);
 	}
 
 	function toggleContent(content) {
-		console.log(content);
 		tabOpen = !tabOpen;
 		//sjekk om tab clicked allerede er åpen først
 		if(!tabOpen) {
@@ -24,5 +24,4 @@ export default function tabs() {
 
 		}
 	}
-
 }
