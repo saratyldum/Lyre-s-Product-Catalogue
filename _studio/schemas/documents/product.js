@@ -48,8 +48,19 @@ export default {
 		{
 			title: 'Taste profile',
 			name: 'tasteProfile',
-			type: 'array',
-			of: [{ type: 'string'}]
+			type: 'object',
+			fields: [
+				{
+					title: 'To taste',
+					name: 'toTaste',
+					type: 'string'
+				},
+				{
+					title: 'Bouquet',
+					name: 'bouquet',
+					type: 'string'
+				} 
+			]
 		},
 		{
 			title: 'Instructions',
