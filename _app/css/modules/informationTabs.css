@@ -12,3 +12,9 @@
 	text-align: left;
 	padding: 0.5rem 0;
 }
+
+@media screen and (min-width: 992px) {
+	.product-information__tab {
+		max-width: 80vw;
+	}
+}
