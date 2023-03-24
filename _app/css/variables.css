@@ -13,34 +13,34 @@
 	--paragraph-letter-spacing: 0.05rem;
 
 	/********** background colors *********/
-	--dry-london: #2E71A6;
+	--dry-london-spirit: #2E71A6;
 	--absinthe: #257441;
-	--agave-reserva: #1C938E;
+	--agave-reserva-spirit: #1C938E;
 	--amaretti: #E0BB55;
 	--american-malt: #64687B;
 	--apertif-dry: #805E06;
 	--coffee-originale: #626166;
 	--orange-sec: #C75A3B;
-	--pink-london: #FF7D91;
-	--spiced-cane: #8E4451;
-	--white-cane: #C8B861;
-	--dark-cane: #7C5653;
+	--pink-london-spirit: #FF7D91;
+	--spiced-cane-spirit: #8E4451;
+	--white-cane-spirit: #C8B861;
+	--dark-cane-spirit: #7C5653;
 	--italian-orange: #A74D56;
 	--italian-spritz: #9DAABB;
 
 	/********** background colors (darker) *********/
-	--dry-london-darker: #236da9;
+	--dry-london-spirit-darker: #236da9;
 	--absinthe-darker: #0e4621;
-	--agave-reserva-darker: #167571;
+	--agave-reserva-spirit-darker: #167571;
 	--amaretti-darker: #8b6d19;
 	--american-malt-darker: #404560;
 	--apertif-dry-darker: #503a02;
 	--coffee-originale-darker: #36343e;
 	--orange-sec-darker: #792812;
-	--pink-london-darker: #a53445;
-	--spiced-cane-darker: #8E4451;
-	--white-cane-darker: #c7b552;
-	--dark-cane-darker: #56312f;
+	--pink-london-spirit-darker: #a53445;
+	--spiced-cane-spirit-darker: #8E4451;
+	--white-cane-spirit-darker: #c7b552;
+	--dark-cane-spirit-darker: #56312f;
 	--italian-orange-darker: #681f27;
 	--italian-spritz-darker: #405570;
 
