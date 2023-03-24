@@ -29,7 +29,6 @@ export default function navigation() {
 	}
 
 	function toggleNavigation() {
-		console.log(navigationVisble);
 		if(navigationVisble) {
 			navigationButton.style.display = 'none';
 			navigation.style.transform  = 'translateY(0)'
