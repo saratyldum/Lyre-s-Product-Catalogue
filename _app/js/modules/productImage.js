@@ -36,8 +36,10 @@ export default async function productImage() {
 	function renderHTML() {
 		const navigation = document.querySelector('.nav');
 		const navigationList = createNavigationImageDOM();
-
-		navigation.appendChild(navigationList)
+		
+		if(navigation !== null) {
+			navigation.appendChild(navigationList)
+		}
 	}
 	
 	renderHTML()
