@@ -9,6 +9,19 @@ export default {
 			type: 'string',
 		},
 		{
+			title: 'Slug',
+			name: 'slug',
+			type: 'slug',
+			options: {
+				source: 'title',
+			}
+		},
+		{
+			title: 'Image',
+			name: 'image',
+			type: 'image',
+		},
+		{
 			title: 'Description',
 			name: 'description',
 			type: 'text',
@@ -19,8 +32,8 @@ export default {
 			type: 'array',
 			of: [
 				{
-					title: 'Main Ingredient',
-					name: 'mainIngredient',
+					title: 'Lyre Ingredient',
+					name: 'lyreIngredient',
 					type: 'object',
 					fields: [
 						{
@@ -30,8 +43,8 @@ export default {
 							decription: 'Amount in mL'
 						},
 						{
-							title: 'Enitity',
-							name: 'enitity',
+							title: 'Entity',
+							name: 'entity',
 							type: 'string',
 							// options: 
 						},
@@ -43,12 +56,25 @@ export default {
 								{ type: 'product'}
 							],
 						},
-
-					]
+					],
+					preview: {
+						select: {
+							quantity: 'quantity',
+							entity: 'entity',
+							product: 'product.title',
+						},
+						prepare: (fields) => {
+				
+							const { quantity, entity, product } = fields;
+							return {
+								title: `${quantity}${entity} ${product} `
+							}
+						}
+					}
 				},
 				{
-					title: 'optional Ingredient',
-					name: 'optional Ingredient',
+					title: 'secondary Ingredient',
+					name: 'secondaryIngredient',
 					type: 'object',
 					fields: [
 						{
@@ -58,23 +84,33 @@ export default {
 							decription: 'Amount in mL'
 						},
 						{
-							title: 'Enitity',
-							name: 'enitity',
+							title: 'Entity',
+							name: 'entity',
 							type: 'string',
 							// options: 
 						},
 						{
-							title: 'Prodcut',
-							name: 'prodcut',
-							type: 'reference',
-							to: [
-								{ type: 'product'}
-							],
+							title: 'Product',
+							name: 'product',
+							type: 'string',
 						},
-
-					]
+					],
+					preview: {
+						select: {
+							quantity: 'quantity',
+							entity: 'entity',
+							product: 'product',
+						},
+						
+						prepare: (fields) => {
+							const { quantity, entity, product} = fields;
+							return {
+								title: `${quantity}${entity} ${product} `
+							}
+						}
+					}
 				},
-			]
+			],
 		},
 		{
 			title: 'Method',
@@ -85,6 +121,6 @@ export default {
 			title: 'Garnish',
 			name: 'garnish',
 			type: 'string',
-		}
+		},
 	]
 }
