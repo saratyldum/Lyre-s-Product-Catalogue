@@ -88,7 +88,6 @@ export default async function productInformation() {
 		return [toTaste, bouquet];
 	}
 
-	function
 
 	function renderHTML() {
 		console.log(productInformation.tasteProfile);
@@ -96,6 +95,8 @@ export default async function productInformation() {
 		const productBioContainer = document.querySelector('.product-text')
 		const howToEnjoyTab = document.querySelector('.product-information__tab-1-content');
 		const tasteProfileTab = document.querySelector('.product-information__tab-2-content');
+		const InstructionsTab = document.querySelector('.product-information__tab-3-content');
+
 
 		const productImage = createProductImageDOM();
 		const [title, productInfo, flavourProfile, flavourList] = createProductBioDOM();
@@ -108,6 +109,7 @@ export default async function productInformation() {
 		productBioContainer.appendChild(flavourList)
 
 		howToEnjoyTab.innerText = productInformation.enjoy;
+		InstructionsTab.innerText = productInformation.instructions;
 		tasteProfileTab.append(toTaste, bouquet)
 	};
 
