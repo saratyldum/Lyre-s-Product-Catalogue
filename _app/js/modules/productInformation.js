@@ -78,19 +78,37 @@ export default async function productInformation() {
 		return [title, productInfo, flavourProfile, flavourList]
 	}
 
+	function createTasteProfileDOM() {
+		const toTaste = document.createElement('p');
+		const bouquet = document.createElement('p');
+
+		toTaste.innerHTML = `<strong>To taste:</strong> ${productInformation.tasteProfile.toTaste}`
+		bouquet.innerHTML = `<strong>Bouquet:</strong> ${productInformation.tasteProfile.bouquet}`
+		
+		return [toTaste, bouquet];
+	}
+
+	function
+
 	function renderHTML() {
+		console.log(productInformation.tasteProfile);
 		const productImageContainer = document.querySelector('.product-image');
 		const productBioContainer = document.querySelector('.product-text')
+		const howToEnjoyTab = document.querySelector('.product-information__tab-1-content');
+		const tasteProfileTab = document.querySelector('.product-information__tab-2-content');
+
 		const productImage = createProductImageDOM();
 		const [title, productInfo, flavourProfile, flavourList] = createProductBioDOM();
-
-		console.log(title, productInfo, flavourProfile, flavourList);
+		const [toTaste, bouquet] = createTasteProfileDOM();
 
 		productImageContainer.appendChild(productImage)
 		productBioContainer.appendChild(title)
 		productBioContainer.appendChild(productInfo)
 		productBioContainer.appendChild(flavourProfile)
 		productBioContainer.appendChild(flavourList)
+
+		howToEnjoyTab.innerText = productInformation.enjoy;
+		tasteProfileTab.append(toTaste, bouquet)
 	};
 
 	renderHTML()
