@@ -67,16 +67,5 @@ export default {
 			name: 'instructions',
 			type: 'text'
 		},
-		{
-			title: 'Recipes',
-			name: 'recipes',
-			type: 'array',
-			of: [
-				{
-					type: 'reference',
-					to: [{ type: 'recipe' }]
-				}
-			]
-		}
 	]
 }
