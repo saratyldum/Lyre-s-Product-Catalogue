@@ -1,3 +1,5 @@
+import { sanity } from "../sanity.js";
+
 export default  function  homeStyle() {
 	const bottles = document.querySelectorAll('.navigation__image');
 	const mainContainer = document.querySelector('.main_container');
@@ -7,11 +9,18 @@ export default  function  homeStyle() {
 		bottle.addEventListener('click', changeColor);
 	})
 
-	function changeColor(e) {
+	async function changeColor(e) {
 		const target = e.target.dataset.id;
 
+		const query = `*[_type == 'product' && slug.current == '${target}'][0] {
+			"imageURL": image.asset->url
+		}`
+
+		const imageSrc = await sanity.fetch(query);
+		console.log(imageSrc);
+	
 		mainContainer.style.background = `linear-gradient(var(--${target}), var(--${target}), var(--${target}-darker))`;
-		mainBottle.src = `/_app/assets/images/${target}.png`;
+		mainBottle.src = imageSrc.imageURL;
 		mainBottle.dataset.name = target;
    }
 }
