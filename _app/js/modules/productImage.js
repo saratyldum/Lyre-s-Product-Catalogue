@@ -1,6 +1,8 @@
 import { sanity } from "../sanity.js";
 import homeStyle from "./homeStyle.js";
 
+const categoryButtons = document.querySelectorAll('.product-category button');
+
 
 export default async function productImage() {
 	const categoryButtons = document.querySelectorAll('.product-category button');
@@ -13,13 +15,14 @@ export default async function productImage() {
 	})
 
 
+	async function handleCategoryButtonClick(e) {
+	  images = await fetchImages(e, param);
+	  createNavigationImageDOM();
+	  renderHTML()
+	}
+	
 	images = await fetchImages();
 
-	 async function handleCategoryButtonClick(e) {
-		images = await fetchImages(e, param);
-		createNavigationImageDOM();
-		renderHTML()
-	 }
 
 	 function findParameter(e) {
 		category === undefined ? category = 'spirit' : category = e.target.id;
@@ -70,6 +73,7 @@ export default async function productImage() {
 		const navigation = document.querySelector('.nav');
 		const navigationList = createNavigationImageDOM();
 
+		if(navigation !==null)
 		navigation.innerHTML = '';
 		
 		if(navigation !== null) {
