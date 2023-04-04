@@ -26,9 +26,19 @@ export default  function  homeStyle() {
 
 
 		if(product.category === 'spirit') {
-			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-spirit.svg)")
-		} else {
+			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-spirit.svg)");
+			document.documentElement.style.setProperty('--clickMeAfterWidth', "170px")
+			document.documentElement.style.setProperty('--clickMeAfterBlur', "blur(30px)")
+
+		} else if (product.category === 'premixed'){
 			document.documentElement.style.setProperty('--clickMeButton', "transparent")
+			document.documentElement.style.setProperty('--clickMeAfterWidth', "570px")
+			document.documentElement.style.setProperty('--clickMeAfterBlur', "blur(60px)")
+		} else if (product.category === 'sparklingWine') {
+			document.documentElement.style.setProperty('--clickMeButton', "transparent");
+			document.documentElement.style.setProperty('--clickMeAfterWidth', "170px")
+			document.documentElement.style.setProperty('--clickMeAfterBlur', "blur(30px)")
+
 		}
-   }
+	}
 }
