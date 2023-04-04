@@ -1,3 +1,25 @@
 .product-category button:focus {
 	text-decoration: underline;
 }
+
+.product-category {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	padding: .5rem 0;
+}
+
+@media screen and (min-width: 992px) {
+	.product-category {
+		position: fixed;
+		width: 100%;
+		margin: 0 auto;
+		padding: 1rem 0;
+		gap: 2rem;
+		z-index: 99;
+	}
+
+	.product-category button {
+		font-size: 1rem;
+	}
+}
