@@ -2,7 +2,7 @@ import { sanity } from "../sanity.js";
 
 export default  function  homeStyle() {
 	const bottles = document.querySelectorAll('.navigation__image');
-	const mainContainer = document.querySelector('.main_container');
+	const body = document.querySelector('body');
 	const mainBottle = document.querySelector('#hero-img');
 
 	bottles.forEach(bottle => {
@@ -19,7 +19,7 @@ export default  function  homeStyle() {
 		const imageSrc = await sanity.fetch(query);
 		console.log(imageSrc);
 	
-		mainContainer.style.background = `linear-gradient(var(--${target}), var(--${target}), var(--${target}-darker))`;
+		body.style.background = `linear-gradient(var(--${target}), var(--${target}), var(--${target}-darker))`;
 		mainBottle.src = imageSrc.imageURL;
 		mainBottle.dataset.name = target;
    }
