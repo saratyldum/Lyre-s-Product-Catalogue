@@ -47,7 +47,7 @@
 
 .img::before {
 	content: '';
-	background: url(../../assets/icons/clickMe-button.svg);
+	background: var(--clickMeButton);
 	background-repeat: no-repeat;
 	width: 100px;
 	height: 100px;
@@ -66,7 +66,7 @@
 		flex-direction: row-reverse;
 		justify-content: center;
 		align-items: flex-start;
-		padding: 6rem 6rem 0 0;
+		padding: 6rem 0 0 0;
 	}
 
 	.information {
@@ -91,8 +91,8 @@
 	}
 
 	.img::before {
-		right: -2.8rem;
-		top: 6.5rem;
+		right: var(--clickMeRight);
+		top: var(--clickMeTop)
 	}
 
 	.logo img {

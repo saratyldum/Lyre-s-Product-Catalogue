@@ -57,4 +57,8 @@
 	--classico-grande-darker: #64693d;
 
 
+	/*CLICK ME BUTTON*/
+	--clickMeButton: url(../../assets/icons/clickMe-button-spirit.svg);
+	--clickMeTop: -2.8rem;
+	--clickMeRight: 6.5rem;
 }
