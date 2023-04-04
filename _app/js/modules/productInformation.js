@@ -14,6 +14,7 @@ export default async function productInformation() {
 		const target = heroBottle.dataset.name;
 		const activeLink = `./information-page/?product=${target}`;
 		heroBottle.parentElement.href = activeLink;
+		console.log(target);
 	}
 
 	async function fetchProductInformation() {
