@@ -51,13 +51,18 @@
 	font-size: var(--paragraph-font-size);
 	letter-spacing: var(--paragraph-letter-spacing);
 	/* font-family: var(--paragraph-font-family); */
-
 }
 
 .product-flavours {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.product-flavours li {
+	display: flex;
+	align-items: center;
+	gap: .3rem;
 }
 
 .product-flavours li img {
