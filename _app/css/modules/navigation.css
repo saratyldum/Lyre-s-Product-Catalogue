@@ -7,6 +7,7 @@
 	overflow-x: scroll;
 	overflow-y: hidden;
 	width: 100vw;
+	justify-content: center;
 }
 
 .navigation__image {
@@ -36,13 +37,10 @@
 }
 
 @media screen and (min-width: 992px) {
-
 	.nav {
 		position: absolute;
-		bottom: 0;
+		bottom: 0.5rem;
 		left: 0;
-		transition: all 0.3s ease-in;
-		transform: translateY(200px);
 	}
 
 	.navigation {
