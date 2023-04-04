@@ -27,6 +27,12 @@
 	--dark-cane-spirit: #7C5653;
 	--italian-orange: #A74D56;
 	--italian-spritz: #9DAABB;
+	--classico-premix-drinks: #A19372;
+	--g-and-t-premix-drinks:#8BAABE;
+	--dark-n-spicy-premix-drinks:#6F494D;
+	--american-malt-and-cola-premix-drinks: #546177;
+	--amalfi-spritz-premix-drinks: #D2B094;
+	--classico-grande: #777C51;
 
 	/********** background colors (darker) *********/
 	--dry-london-spirit-darker: #236da9;
@@ -43,5 +49,12 @@
 	--dark-cane-spirit-darker: #56312f;
 	--italian-orange-darker: #681f27;
 	--italian-spritz-darker: #405570;
+	--classico-premix-drinks-darker: #7b7054;
+	--g-and-t-premix-drinks-darker:#597486;
+	--dark-n-spicy-premix-drinks-darker:#603539;
+	--american-malt-and-cola-premix-drinks-darker: #43526b;
+	--amalfi-spritz-premix-drinks-darker: #895f3d;
+	--classico-grande-darker: #64693d;
+
 
 }
