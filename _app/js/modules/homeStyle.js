@@ -25,9 +25,6 @@ export default  function  homeStyle() {
 		mainBottle.dataset.name = target;
 
 
-		// if(product.category !== 'spirit') {
-
-		// }
 		if(product.category === 'spirit') {
 			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-spirit.svg)")
 		} else {
