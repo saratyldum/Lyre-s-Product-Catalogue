@@ -45,9 +45,11 @@
 	position: relative;
 }
 
+
+
 .img::before {
 	content: '';
-	background: url(../../assets/icons/clickMe-button.svg);
+	background: var(--clickMeButton);
 	background-repeat: no-repeat;
 	width: 100px;
 	height: 100px;

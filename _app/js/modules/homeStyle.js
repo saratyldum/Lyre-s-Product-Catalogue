@@ -11,16 +11,26 @@ export default  function  homeStyle() {
 
 	async function changeColor(e) {
 		const target = e.target.dataset.id;
+		const image = document.querySelector('.img');
 
 		const query = `*[_type == 'product' && slug.current == '${target}'][0] {
-			"imageURL": image.asset->url
+			"imageURL": image.asset->url,
+			category
 		}`
 
-		const imageSrc = await sanity.fetch(query);
-		console.log(imageSrc);
+		const product = await sanity.fetch(query);
 	
 		body.style.background = `linear-gradient(var(--${target}), var(--${target}), var(--${target}-darker))`;
-		mainBottle.src = imageSrc.imageURL;
+		mainBottle.src = product.imageURL;
 		mainBottle.dataset.name = target;
+
+
+		if(product.category === 'spirit') {
+			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-spirit.svg)")
+		} else if (product.category === 'premixed') {
+			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-premixed.svg)")
+		} else if (product.category === 'sparklingWine') {
+			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-sparklingWine.svg)")
+		}
    }
 }
