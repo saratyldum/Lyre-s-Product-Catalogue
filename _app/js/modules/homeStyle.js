@@ -29,6 +29,9 @@ export default  function  homeStyle() {
 			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-spirit.svg)")
 		} else if (product.category === 'premixed') {
 			mainImageContainer.style.height = '350px'
+
+			document.documentElement.style.setProperty('--clickMeTop', '0rem');
+			
 			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-premixed.svg)")
 		} else if (product.category === 'sparklingWine') {
 			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-sparklingWine.svg)")
