@@ -2,7 +2,6 @@
 	position: relative;
 	width: 100%;
 	height: 100dvh;
-	background: linear-gradient(var(--absinthe), var(--absinthe), var(--absinthe-darker));
 	display: flex;
 	flex-direction: column;
 	align-items: center;
