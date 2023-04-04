@@ -28,7 +28,7 @@ export default  function  homeStyle() {
 		if(product.category === 'spirit') {
 			document.documentElement.style.setProperty('--clickMeButton', "url(../../assets/icons/clickMe-button-spirit.svg)")
 		} else {
-			document.documentElement.style.removeProperty('--clickMeButton')
+			document.documentElement.style.setProperty('--clickMeButton', "transparent")
 		}
    }
 }
