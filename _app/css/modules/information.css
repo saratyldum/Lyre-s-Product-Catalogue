@@ -21,7 +21,6 @@
 	text-transform: uppercase;
 	position: relative;
 	margin-bottom: 2rem;
-
 }
 
 .body__information h1::after {
@@ -44,6 +43,8 @@
 
 .product-image img {
 	height: 100%;
+	max-width: 350px;
+	object-fit: contain;
 }
 
 .product-bio, .product-flavour-profile, .product-flavours {
@@ -76,10 +77,11 @@
 		position: relative;
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		justify-content: space-between;
 		width: 80vw;
-		height: 60vh;
-		align-items: center;
+		gap: 1rem;
+		margin: 2rem 0;
 	}
 
 	.product-underlay {
@@ -94,6 +96,10 @@
 	.product-image {
 		margin: 0 auto;
 		justify-self: center;
+	}
+
+	.product-image img {
+		max-width: 400px;
 	}
 
 	.product-text {

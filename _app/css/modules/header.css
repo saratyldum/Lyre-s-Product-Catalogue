@@ -1,3 +1,7 @@
+.header__logo img {
+	width: 150px;
+}
+
 .product-category button:focus {
 	text-decoration: underline;
 }

@@ -41,7 +41,8 @@
 
 .main_image img {
 	height: 100%;
-	object-fit: cover;
+	max-width: 350px;
+	object-fit: contain;
 	position: relative;
 }
 
@@ -88,6 +89,10 @@
 		display: flex;
 		justify-content: center;
 		position: relative;
+	}
+
+	.main_image img {
+		max-width: 600px;
 	}
 
 	.img::before {
