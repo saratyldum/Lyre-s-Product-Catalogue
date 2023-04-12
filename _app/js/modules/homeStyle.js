@@ -32,11 +32,11 @@ export default  function  homeStyle() {
 
 		} else if (product.category === 'premixed'){
 			document.documentElement.style.setProperty('--clickMeButton', "transparent")
-			document.documentElement.style.setProperty('--clickMeAfterWidth', "570px")
+			document.documentElement.style.setProperty('--clickMeAfterWidth', "350px")
 			document.documentElement.style.setProperty('--clickMeAfterBlur', "blur(60px)")
 		} else if (product.category === 'sparklingWine') {
 			document.documentElement.style.setProperty('--clickMeButton', "transparent");
-			document.documentElement.style.setProperty('--clickMeAfterWidth', "170px")
+			document.documentElement.style.setProperty('--clickMeAfterWidth', "100px")
 			document.documentElement.style.setProperty('--clickMeAfterBlur', "blur(30px)")
 
 		}

@@ -60,5 +60,6 @@
 	/*CLICK ME BUTTON*/
 	--clickMeButton: url(../../assets/icons/clickMe-button-spirit.svg);
 	--clickMeAfterWidth: 170px;
+	
 	--clickMeAfterBlur: blur(30px);
 }
