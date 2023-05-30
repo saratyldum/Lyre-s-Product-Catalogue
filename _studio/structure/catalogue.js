@@ -16,7 +16,5 @@ export default Structure =>  {
 					.child(
 						editor().id('settings').schemaType('settings')
 					),
-
-					
 				])
 }

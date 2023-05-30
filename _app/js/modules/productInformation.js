@@ -1,11 +1,8 @@
 import { sanity } from "../sanity.js";
 
-
-
 export default async function productInformation() {
 	const heroBottle = document.querySelector('#hero-img');
 	let productInformation = await fetchProductInformation()
-
 	
 	if(heroBottle !== null )
 	heroBottle.addEventListener('click', handleHeroBottleClick);
